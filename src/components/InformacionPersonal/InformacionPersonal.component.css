@@ -1,0 +1,329 @@
+.fondo-elemento {
+  background-image: url("/assets/img/fondo_gris.jpg");
+  background-size: auto;
+}
+
+#recuadro1 {
+border-radius: 25px;
+background-image: url("/assets/img/fondo5.jpg");
+padding: 20px;
+text-align: center;
+display: flex;
+max-width: 80%;
+margin: 0 auto;
+}
+
+.profile img {
+max-width: 230px;
+border-radius: 30px;
+}
+
+@media (max-width: 900px) {
+
+.profile img {
+  display: none
+}
+}
+
+.profile {
+width: 30%;
+}
+
+.text {
+text-align: left;
+}
+
+@media (max-width: 900px) {
+
+#recuadro1 {
+  flex-direction: column;
+}
+
+.profile {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+}
+.image-container {
+margin: 30px auto 0;
+width: 230px;
+}
+
+.image-container img {
+width: 100%;
+border-radius: 8px;
+border: 3px solid white;
+}
+
+h1 {
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+font-size: 4rem;
+color:white;
+text-align: center;
+}
+
+h2 {
+font-size: 1.70rem;
+font-family: 'Montserrat',sans-serif;
+margin-top: 10px;
+color:white;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+
+.image-container {
+  display: none;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+}
+
+
+.social-icons {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+
+.social-icon {
+margin: 0 5px;
+}
+
+.social-icon img {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+.social-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+}
+
+#recuadro2 {
+border-radius: 25px;
+background-image: url("/assets/img/fondo5.jpg");
+padding: 20px;
+text-align: center;
+max-width: 80%;
+margin: 0 auto;
+}
+
+.content {
+max-width: 80%;
+margin: 0 auto;
+}
+
+h2 {
+font-size: 2rem;
+margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+
+#recuadro2 {
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+}
+
+.container {
+display: flex;
+flex-direction: row;
+max-width: 100%;
+margin: 0 auto;
+}
+
+.section1, .section2 {
+flex: 1;
+}
+
+.contact-info {
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
+color: #333;
+margin: 0 auto;
+src: url(https://fonts.googleapis.com/css?family=Montserrat);
+}
+
+.contact-info h2 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #333;
+}
+
+.contact-info ul {
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+.contact-info li {
+margin-bottom: 10px;
+}
+
+.contact-info strong {
+font-weight: bold;
+}
+
+@media (max-width: 900px) {
+.container {
+  flex-direction: column;
+}
+
+.section1{
+  flex: 1;
+  width: 100%;
+}
+}
+
+@media (max-width: 768px){
+.container {
+  flex-direction: column;
+}
+.section2{
+  flex: 1;
+  width: 111%;
+}
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.logo {
+margin-right: auto;
+font-weight: bold;
+color: #117dd1;
+font-family: 'Montserrat',sans-serif;
+}
+
+nav a {
+text-decoration: none;
+
+font-size: 16px;
+margin: 0 10px;
+font-family: 'Montserrat',sans-serif;
+}
+
+nav a:hover {
+color: #117dd1;
+}
+
+@media (max-width: 768px) {
+
+nav {
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+}
+
+.intereses {
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
+color: #333;
+margin: 0 auto;
+src: url(https://fonts.googleapis.com/css?family=Montserrat);
+text-align: center;
+max-width: 80%;
+margin: 0 auto;
+}
+
+.intereses ul {
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+.intereses li {
+margin-bottom: 10px;
+}
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 30px;
+text-align: center;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+img {
+  animation: slideIn 1s ease-out forwards;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  animation: slideIn 1s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1, h2, h3 {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* ELABORADO POR JUAN PACHECO 26049677-2023 */
+
